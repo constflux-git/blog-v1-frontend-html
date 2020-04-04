@@ -220,12 +220,11 @@ body {
   --radius: 20px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   html {
-    --base-font-size: 17px;
+    --base-font-size: 17px !important;
   }
   body {
-    --space: 1.5rem;
     --header-height: 60px;
   }
 }
@@ -379,8 +378,8 @@ body {
   border-radius: 50%;
   border: solid;
   border-color: white;
-  width: 117px;
-  height: 117px;
+  width: calc(var(--base-font-size) * 5.5);
+  height: calc(var(--base-font-size) * 5.5);
   overflow: hidden;
   -webkit-transition: all .6s;
   transition: all .6s;

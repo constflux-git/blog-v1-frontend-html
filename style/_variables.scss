@@ -19,13 +19,13 @@ body {
     --radius: 20px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     html {
-        --base-font-size: 17px;
+        --base-font-size: 17px !important;
     }
 
     body {
-        --space: 1.5rem;
+        // --space: 1.5rem;
         --header-height: 60px;
     }
 }

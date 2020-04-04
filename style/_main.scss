@@ -136,8 +136,8 @@
             border-radius: 50%;
             border: solid;
             border-color: white;
-            width: 117px;
-            height: 117px;
+            width: calc(var(--base-font-size) * 5.5);
+            height: calc(var(--base-font-size) * 5.5);
             overflow: hidden;
             transition: all .6s;
 
