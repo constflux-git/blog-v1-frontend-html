@@ -1,0 +1,195 @@
+.headerTop {
+    color: white;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--header-height);
+    padding: 0 calc(var(--space)/2);
+
+    .backIcon a {
+        text-decoration: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1.5vw 15px 0;
+}
+
+.card {
+    position: relative;
+    background-color: var(--bg-content-color);
+    padding: var(--space);
+    margin: 0 auto var(--space);
+    border-radius: var(--radius);
+    max-width: var(--content-width);
+    transition: all .6s;
+
+    &__header {
+        margin-left: calc(var(--space)*-1);
+        margin-right: calc(var(--space)*-1);
+        margin-top: calc(var(--space)*-1);
+        margin-bottom: calc(var(--space)/2);
+        border-radius: var(--radius) var(--radius) 0 0;
+        max-height: 50vh;
+        overflow: hidden;
+    }
+
+    &__content__title {
+        margin-top: 0 !important;
+        font-weight: 900;
+        color: var(--title-color);
+    }
+
+    &__content__meta {
+        margin-bottom: 1.25em;
+        color: var(--sub-title-color);
+    }
+
+    &__content__description {
+        color: var(--sub-title-color);
+    }
+
+    &__tags {
+        margin: 1em 0 0;
+        z-index: 1;
+        position: relative;
+
+        &__link {
+            display: inline-block;
+            text-decoration: none;
+            // vertical-align: baseline;
+            // text-align: center;
+            padding: 0.5em;
+            border-radius: var(--radius);
+            background-color: var(--bg-color);
+            margin-right: 0.7em;
+            margin-bottom: .7em;
+            font-size: 0.8em;
+            color: var(--title-color);
+            z-index: inherit !important;
+            cursor: pointer;
+            transition: all .5s;
+
+            &:hover {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        border-radius: var(--radius);
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+}
+
+.meta {
+    color: var(--sub-title-color);
+}
+
+
+
+.index {
+    header {
+        visibility: hidden;
+    }
+
+    .card {
+        &:hover {
+            box-shadow: 0 20px 25px -5px rgba(27, 182, 221, 0.178), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: scale(1.005);
+        }
+    }
+
+
+    .profileBox {
+        display: flex;
+        justify-content: space-between;
+        max-width: calc(var(--content-width)*0.5);
+        margin: 0 auto 0;
+        align-items: flex-start !important;
+
+        .profile {
+            line-height: .5;
+            margin-bottom: var(--space);
+        }
+
+        .image {
+            border-radius: 50%;
+            border: solid;
+            border-color: white;
+            width: 117px;
+            height: 117px;
+            overflow: hidden;
+            transition: all .6s;
+
+            &:hover {
+                box-shadow: 0 20px 25px -5px rgba(27, 182, 221, 0.178), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transform: scale(1.005);
+            }
+        }
+    }
+
+    .navbar {
+        text-align: center;
+        margin-top: calc(var(--space));
+
+
+        a {
+            position: relative;
+            text-decoration: none;
+            font-family: 'Muli', sans-serif;
+            color: var(--sub-title-color);
+            top: -40px;
+            margin-right: 50px;
+            font-weight: bold;
+            transition: all .6s;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: var(--title-color);
+            }
+        }
+    }
+
+    .container {
+        padding-top: 0 !important;
+    }
+
+
+}
+
+.singlePage {
+
+    .headerTop {
+        .backIcon a {
+            color: var(--title-color);
+        }
+    }
+
+    .post__head {
+        padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+        text-align: center;
+
+        .post__title {
+
+            font-size: calc(2 * var(--base-font-size)) !important;
+            margin-top: 0 !important;
+        }
+    }
+}

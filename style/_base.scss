@@ -1,0 +1,75 @@
+// Baskerville Font
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+// Muli Font
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500&display=swap');
+
+// opinionated global format
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: var(--base-font-size) !important;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+    // transition: color .6s, background-color .6s;
+    line-height: 1.5 !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: 'Muli', sans-serif !important;
+    margin-bottom: 1.25em;
+}
+
+h1 {
+    font-size: 1.802em !important;
+}
+
+h2 {
+    font-size: 1.602em;
+}
+
+h3 {
+    font-size: 1.424em;
+}
+
+h4 {
+    font-size: 1.266em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+small {
+    font-size: 0.889em;
+}
+
+strong {
+    font-weight: 600 !important;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    // transition: color .6s;
+    color: var(--title-color);
+    margin: 1rem 0 1rem !important;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900 !important;
+    line-height: 1.15;
+}
